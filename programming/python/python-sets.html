@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="shortcut icon" href="../../source/lang-favicon.png" type="image/x-icon">
+     <link rel="stylesheet" href="../../source/style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <link rel="stylesheet" href="../../source/prism.css">
+     <meta name="description" content="In Python, a set is an unordered collection of unique elements. Sets are useful when you want to store a collection of distinct items ">
+     <title>Python Sets Tutorial</title>
+</head>
+<body>
+     <!--Navigation Bar-->
+     <header>
+          <nav>
+               <div class="menu">
+                    <h2><a href="../../index.html" class="logo">LangGuides</a></h2>
+                    <i class="fa-solid fa-bars" id="open"></i>
+                    <i class="fa-solid fa-xmark" id="close"></i>
+                 </div>
+               <ul class="nav-links">
+                    <a href="../../programming/programming-tutorials.html"><li>Programming</li></a>
+                    <a href="../../jobinterview/interview-questions.html"><li>Job Interview</li></a>
+                    <a href="../../biography/biography-stories.html"><li>Biography</li></a>
+                    <a href="../../successstories/sucesss-stories.html"><li>Success Stories</li></a>
+                    
+                    <a href="../../top10/top10.html"><li>Top 10</li></a>
+               </ul>
+          </nav>
+     </header>
+
+     
+
+     <i class="fa-solid fa-arrow-up" id="up"></i> 
+<main> 
+<section class="content">
+<h1>Python Sets</h1>
+<p>In Python, a set is an unordered collection of unique elements. Sets are useful when you want to store a collection of distinct items and perform operations such as membership testing, intersection, union, and difference. </p> 
+
+<h2>Creating a Set</h2>
+<p>To create a set, you can enclose a sequence of elements within curly braces {} or use the set() function. Duplicate elements are automatically removed, and the remaining unique elements are stored in the set.
+</p>
+<pre><code class="language-py">my_set = {1, 2, 3, 4, 5}
+another_set = set([3, 4, 5, 6, 7])     
+</code></pre>
+
+<h2>Set Operations</h2>
+<p>Sets support various operations such as union, intersection, difference, and symmetric difference. These operations allow you to combine or compare sets and perform set-specific operations.
+</p>
+
+<pre><code class="language-py">
+set1 = {1, 2, 3, 4, 5}
+set2 = {4, 5, 6, 7, 8}
+
+union_set = set1.union(set2)
+print(union_set)             # Output: {1, 2, 3, 4, 5, 6, 7, 8}
+
+intersection_set = set1.intersection(set2)
+print(intersection_set)      # Output: {4, 5}
+
+difference_set = set1.difference(set2)
+print(difference_set)        # Output: {1, 2, 3}
+
+symmetric_difference_set = set1.symmetric_difference(set2)
+print(symmetric_difference_set)  # Output: {1, 2, 3, 6, 7, 8}  
+</code></pre>
+
+<h2>Modifying a Set</h2>
+<p>Sets are mutable, so you can add and remove elements from a set using methods like add(), remove(), and discard().
+</p>
+<pre><code class="language-py">
+my_set = {1, 2, 3}
+
+my_set.add(4)
+print(my_set)                # Output: {1, 2, 3, 4}
+
+my_set.remove(2)
+print(my_set)                # Output: {1, 3, 4}
+
+my_set.discard(5)
+print(my_set)                # Output: {1, 3, 4}
+</code></pre>
+
+
+<h2>Set Methods</h2>
+<p>Sets provide a variety of built-in methods to perform operations like checking membership, finding the length, copying, and more. Some commonly used methods include len(), copy(), isdisjoint(), issubset(), issuperset(), and clear().
+</p>
+<pre><code class="language-py">
+my_set = {1, 2, 3}
+
+print(len(my_set))           # Output: 3
+
+new_set = my_set.copy()
+print(new_set)               # Output: {1, 2, 3}
+
+disjoint = my_set.isdisjoint({4, 5, 6})
+print(disjoint)              # Output: True
+
+subset = {1, 2}.issubset(my_set)
+print(subset)                # Output: True
+
+my_set.clear()
+print(my_set)                # Output: set()
+</code></pre>
+
+
+
+<article>
+ 
+
+</article>
+
+<div class="prev-next">
+     <a href="./python-dictonaries.html" class="next">Previous</a>
+     <a href="./python-strings.html" class="next">Next</a>
+</div>
+
+</section>
+
+</main>
+
+<footer>
+     <h3><a href="../../index.html" class="logo">LangGuides</a></h3>
+     <p>Copyright &#169;	 2023 langguides. All rights reserved</p>
+     <a href="../../about/privacy.html">Privacy Policy</a>
+     <a href="../../about/terms-of-use.html">Terms of Use</a>
+</footer>
+
+<script src="../../source/index.js"></script>
+<script src="../../source/prism.js"></script>
+</body>
+</html>

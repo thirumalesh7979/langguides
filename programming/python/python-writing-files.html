@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="shortcut icon" href="../../source/lang-favicon.png" type="image/x-icon">
+     <link rel="stylesheet" href="../../source/style.css">
+     <link rel="stylesheet" href="../../source/prism.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <meta name="description" content="Writing data to files is a common task in many programs. Python provides built-in functions and methods to facilitate file output.">
+     <title>Writing to Files in Python</title>
+</head>
+<body>
+     <!--Navigation Bar-->
+     <header>
+          <nav>
+               <div class="menu">
+                    <h2><a href="../../index.html" class="logo">LangGuides</a></h2>
+                    <i class="fa-solid fa-bars" id="open"></i>
+                    <i class="fa-solid fa-xmark" id="close"></i>
+                 </div>
+               <ul class="nav-links">
+                    <a href="../../programming/programming-tutorials.html"><li>Programming</li></a>
+                    <a href="../../jobinterview/interview-questions.html"><li>Job Interview</li></a>
+                    <a href="../../biography/biography-stories.html"><li>Biography</li></a>
+                    <a href="../../successstories/sucesss-stories.html"><li>Success Stories</li></a>
+                    
+                    <a href="../../top10/top10.html"><li>Top 10</li></a>
+               </ul>
+          </nav>
+     </header>
+
+     
+
+     <i class="fa-solid fa-arrow-up" id="up"></i> 
+<main> 
+<section class="content">
+<h1>Writing to Files in Python</h1>
+<p>Writing data to files is a common task in many programs. Python provides built-in functions and methods to facilitate file output.</p>
+<article> 
+<h2>Opening a File</h2>
+<p>To write to a file, you first need to open it using the open() function. The open() function takes the file path as a parameter and returns a file object that can be used to write data to the file.
+</p>
+<pre><code class="language-py">file = open('example.txt', 'w')
+</code></pre>
+<p>In the example above, example.txt is the name of the file we want to write to, and 'w' specifies that we want to open the file in write mode. If the file does not exist, it will be created. If it already exists, the existing contents will be overwritten.
+</p>
+
+<h2>Writing to a File</h2>
+<p>Once the file is opened, you can write data to it using the write() method of the file object. The write() method takes a string as a parameter and writes it to the file.
+</p>
+<pre><code class="language-py">file = open('example.txt', 'w')
+file.write('Hello, World!\n')
+file.write('This is a new line.')
+file.close()
+</code></pre>
+<p>This code writes the string 'Hello, World!' followed by a newline character ('\n'), and then writes the string 'This is a new line.' to the file example.txt. After writing the data, it's important to close the file using the close() method to ensure that the changes are saved.</p>
+
+<h2>Appending to a File</h2>
+<p>If you want to add content to an existing file without overwriting the existing contents, you can open the file in append mode by specifying 'a' instead of 'w' when opening the file.
+</p>
+<pre><code class="language-py">file = open('example.txt', 'a')
+file.write('This is additional content.')
+file.close()
+</code></pre>
+
+<h2>Using the with Statement</h2>
+<p>It's recommended to use the with statement when writing to files in Python. The with statement automatically takes care of closing the file, even if an exception occurs.
+</p>
+<pre><code class="language-py">
+with open('example.txt', 'w') as file:
+	file.write('Hello, World!')
+</code></pre>
+
+ 
+<p>It's important to note that when writing to files, the data is initially stored in a buffer, and it may not be immediately written to the file on disk. To ensure that the data is written to the file immediately, you can use the flush() method of the file object or close the file using the close() method.
+</p>
+<pre><code class="language-py">
+file = open('example.txt', 'w')
+file.write('Hello, World!')
+file.flush()
+</code></pre>
+
+ 
+ 
+
+</article>
+
+<div class="prev-next">
+     <a href="./python-reading-files.html" class="next">Previous</a>
+     <a href="./python-classes-objects.html" class="next">Next</a>
+</div>
+
+</section>
+
+</main>
+
+<footer>
+     <h3><a href="../../index.html" class="logo">LangGuides</a></h3>
+     <p>Copyright &#169;	 2023 langguides. All rights reserved</p>
+     <a href="../../about/privacy.html">Privacy Policy</a>
+     <a href="../../about/terms-of-use.html">Terms of Use</a>
+</footer>
+
+<script src="../../source/index.js"></script>
+<script src="../../source/prism.js"></script>
+</body>
+</html>

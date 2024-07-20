@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="shortcut icon" href="../../source/lang-favicon.png" type="image/x-icon">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="../../source/style.css">
+     <link rel="stylesheet" href="../../source/prism.css">
+     <meta name="description" content="Inheritance and polymorphism are two important concepts in object-oriented programming that allow for code reuse and flexibility.">
+     <title>Python Inheritance and polymorphism</title>
+</head>
+<body>
+     <!--Navigation Bar-->
+     <header>
+          <nav>
+               <div class="menu">
+                    <h2><a href="../../index.html" class="logo">LangGuides</a></h2>
+                    <i class="fa-solid fa-bars" id="open"></i>
+                    <i class="fa-solid fa-xmark" id="close"></i>
+                 </div>
+               <ul class="nav-links">
+                    <a href="../../programming/programming-tutorials.html"><li>Programming</li></a>
+                    <a href="../../jobinterview/interview-questions.html"><li>Job Interview</li></a>
+                    <a href="../../biography/biography-stories.html"><li>Biography</li></a>
+                    <a href="../../successstories/sucesss-stories.html"><li>Success Stories</li></a>
+                    
+                    <a href="../../top10/top10.html"><li>Top 10</li></a>
+               </ul>
+          </nav>
+     </header>
+
+     
+
+     <i class="fa-solid fa-arrow-up" id="up"></i> 
+<main> 
+<section class="content">
+<h1>Inheritance and polymorphism</h1>
+<p>Inheritance and polymorphism are two important concepts in object-oriented programming that allow for code reuse and flexibility.</p>
+ 
+
+<article>
+
+<h2>Inheritance</h2>
+<p>Inheritance is the process of creating a new class (subclass) by deriving from an existing class (superclass). The subclass inherits the attributes and methods of the superclass and can add its own unique attributes and methods. Inheritance is useful for creating specialized versions of a class or extending its functionality.
+</p>
+<pre><code class="language-py">
+class Animal:
+     def sound(self):
+          print("The animal makes a sound.")
+
+class Dog(Animal):
+     def sound(self):
+          print("The dog barks.")
+</code></pre>
+<p>In this example, we define a superclass Animal with a sound() method and a subclass Dog that inherits from Animal. The Dog class overrides the sound() method to provide a different implementation.
+</p>
+
+<h2>Polymorphism</h2>
+<p>Polymorphism allows objects of different classes to be treated as objects of a common superclass. This means that a variable of the superclass type can refer to objects of either the superclass or its subclasses. Polymorphism enables code to work with different types of objects through a common interface.</p>
+<pre><code class="language-py">
+def make_sound(animal):
+animal.sound()
+
+animal1 = Animal()
+animal2 = Dog()
+
+make_sound(animal1)  # Output: The animal makes a sound.
+make_sound(animal2)  # Output: The dog barks.
+</code></pre>
+<p>In this code, the make_sound() function takes an object of the superclass Animal as an argument. The function can accept both Animal objects and Dog objects because Dog is a subclass of Animal. Polymorphism allows the function to call the appropriate sound() method based on the actual type of the object.
+</p>
+
+<h2></h2>
+<p></p>
+<pre><code class="language-py">
+
+</code></pre>
+
+
+<h2>Method Overriding</h2>
+<p>Method overriding occurs when a subclass provides its own implementation of a method inherited from the superclass. This allows the subclass to modify or extend the behavior of the inherited method.
+</p>
+<pre><code class="language-py">
+class Animal:
+     def sound(self):
+          print("The animal makes a sound.")
+
+class Cat(Animal):
+     def sound(self):
+          print("The cat meows.")
+</code></pre>
+<p>In this example, the Cat class overrides the sound() method inherited from Animal to provide a different sound. When calling sound() on a Cat object, the overridden method in the Cat class is executed.
+</p>
+
+ 
+
+
+</article>
+
+<div class="prev-next">
+     <a href="./python-creating-objects.html" class="next">Previous</a>
+     <a href="./python-exception-handling.html" class="next">Next</a>
+</div>
+
+</section>
+
+</main>
+
+<footer>
+     <h3><a href="../../index.html" class="logo">LangGuides</a></h3>
+     <p>Copyright &#169;	 2023 langguides. All rights reserved</p>
+     <a href="../../about/privacy.html">Privacy Policy</a>
+     <a href="../../about/terms-of-use.html">Terms of Use</a>
+</footer>
+
+<script src="../../source/index.js"></script>
+<script src="../../source/prism.js"></script>
+</body>
+</html>

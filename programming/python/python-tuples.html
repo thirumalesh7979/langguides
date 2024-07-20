@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="shortcut icon" href="../../source/lang-favicon.png" type="image/x-icon">
+     <link rel="stylesheet" href="../../source/style.css">
+     <link rel="stylesheet" href="../../source/prism.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <meta name="description" content="In Python, a tuple is an ordered, immutable collection of elements. Tuples are similar to lists, but unlike lists, they cannot be modified once created.">
+     <title>Python Tuples</title>
+</head>
+<body>
+     <!--Navigation Bar-->
+     <header>
+          <nav>
+               <div class="menu">
+                    <h2><a href="../../index.html" class="logo">LangGuides</a></h2>
+                    <i class="fa-solid fa-bars" id="open"></i>
+                    <i class="fa-solid fa-xmark" id="close"></i>
+                 </div>
+               <ul class="nav-links">
+                    <a href="../../programming/programming-tutorials.html"><li>Programming</li></a>
+                    <a href="../../jobinterview/interview-questions.html"><li>Job Interview</li></a>
+                    <a href="../../biography/biography-stories.html"><li>Biography</li></a>
+                    <a href="../../successstories/sucesss-stories.html"><li>Success Stories</li></a>
+                    
+                    <a href="../../top10/top10.html"><li>Top 10</li></a>
+               </ul>
+          </nav>
+     </header>
+
+     
+
+     <i class="fa-solid fa-arrow-up" id="up"></i> 
+<main> 
+<section class="content">
+<h1>Python Tuples</h1>
+<p>In Python, a tuple is an ordered, immutable collection of elements. Tuples are similar to lists, but unlike lists, they cannot be modified once created. Tuples are often used to group related data together.</p>
+ 
+
+<h2>Creating a Tuple</h2>
+<p>To create a tuple, you enclose a sequence of elements within parentheses (), separated by commas. Although parentheses are optional, it is a good practice to use them to make the tuple more explicit.
+</p>
+<pre><code class="language-py">
+my_tuple = (1, 2, 3)
+fruits_tuple = ('apple', 'banana', 'orange')
+mixed_tuple = (10, 'hello', 3.14, True)
+</code></pre>  
+
+
+<h2>Accessing Tuple Elements</h2>
+<p>You can access individual elements in a tuple using indexing, similar to lists. The indexing starts from 0, and negative indices can be used to access elements from the end of the tuple.
+</p>
+<pre><code class="language-py">
+my_tuple = (1, 2, 3)
+print(my_tuple[0])  # Output: 1
+print(my_tuple[-1])  # Output: 3
+</code></pre>
+
+
+<h2>Tuple Packing and Unpacking</h2>
+<p>Tuple packing is the process of creating a tuple by assigning multiple values to a single variable, while tuple unpacking allows you to assign individual values from a tuple to multiple variables.
+</p>
+<pre><code class="language-py">
+# Tuple packing
+my_tuple = 1, 2, 3
+print(my_tuple)  # Output: (1, 2, 3)
+
+# Tuple unpacking
+a, b, c = my_tuple
+print(a)  # Output: 1
+print(b)  # Output: 2
+print(c)  # Output: 3
+     
+</code></pre>  
+
+
+<h2>Tuple Operations</h2>
+<p>Tuples support several operations, such as concatenation (+) and repetition (*). However, since tuples are immutable, operations that modify the tuple directly, like appending or removing elements, are not supported.
+</p>
+<pre><code class="language-py">
+tuple1 = (1, 2, 3)
+tuple2 = (4, 5, 6)
+result = tuple1 + tuple2
+print(result)  # Output: (1, 2, 3, 4, 5, 6)
+
+repeated = (1, 2) * 3
+print(repeated)  # Output: (1, 2, 1, 2, 1, 2)
+</code></pre>  
+
+<h2>Tuple Methods</h2>
+<p>Tuples have fewer built-in methods compared to lists since they are immutable. However, common methods such as count() and index() are available for tuple operations.
+</p>
+<pre><code class="language-py">
+my_tuple = (1, 2, 3, 2)
+count = my_tuple.count(2)
+print(count)  # Output: 2
+
+index = my_tuple.index(3)
+print(index)  # Output: 2
+</code></pre>
+
+
+
+<article>
+ 
+
+</article>
+
+<div class="prev-next">
+     <a href="./python-lists.html" class="next">Previous</a>
+     <a href="./python-dictonaries.html" class="next">Next</a>
+</div>
+
+</section>
+
+</main>
+
+<footer>
+     <h3><a href="../../index.html" class="logo">LangGuides</a></h3>
+     <p>Copyright &#169;	 2023 langguides. All rights reserved</p>
+     <a href="../../about/privacy.html">Privacy Policy</a>
+     <a href="../../about/terms-of-use.html">Terms of Use</a>
+</footer>
+
+<script src="../../source/index.js"></script>
+<script src="../../source/prism.js"></script>
+</body>
+</html>

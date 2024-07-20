@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="shortcut icon" href="../../source/lang-favicon.png" type="image/x-icon">
+     <link rel="stylesheet" href="../../source/style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="../../source/prism.css">
+     <meta name="description" content="In Python, modules are files containing Python code that define functions, classes, and variables that can be used in other programs.">
+     <title>Importing and Using Modules in Python</title>
+</head>
+<body>
+     <!--Navigation Bar-->
+     <header>
+          <nav>
+               <div class="menu">
+                    <h2><a href="../../index.html" class="logo">LangGuides</a></h2>
+                    <i class="fa-solid fa-bars" id="open"></i>
+                    <i class="fa-solid fa-xmark" id="close"></i>
+                 </div>
+               <ul class="nav-links">
+                    <a href="../../programming/programming-tutorials.html"><li>Programming</li></a>
+                    <a href="../../jobinterview/interview-questions.html"><li>Job Interview</li></a>
+                    <a href="../../biography/biography-stories.html"><li>Biography</li></a>
+                    <a href="../../successstories/sucesss-stories.html"><li>Success Stories</li></a>
+                    
+                    <a href="../../top10/top10.html"><li>Top 10</li></a>
+               </ul>
+          </nav>
+     </header>
+
+     
+
+     <i class="fa-solid fa-arrow-up" id="up"></i> 
+<main> 
+<section class="content">
+
+<h1>Importing and Using Modules in Python</h1>
+<p>In Python, modules are files containing Python code that define functions, classes, and variables that can be used in other programs. Modules allow you to organize your code into separate files, promote code reusability, and avoid naming conflicts.</p>
+ 
+
+
+<article>
+
+
+<h2>Importing Modules</h2>
+<p>To import a module in Python, you can use the <strong>import</strong> statement followed by the name of the module.
+</p>
+<pre><code class="language-py">import math
+</code></pre>
+<p>In this example, the math module is imported, which provides various mathematical functions and constants.
+</p>
+
+<h2>Using Functions and Variables from a Module</h2>
+<p>Once a module is imported, you can access its functions, classes, and variables using the dot notation.
+</p>
+<pre><code class="language-py">
+import math
+
+print(math.sqrt(25))  # Output: 5.0
+print(math.pi)  # Output: 3.141592653589793
+</code></pre>
+<p>In this code, the sqrt() function from the math module is called to calculate the square root of 25. The constant pi from the math module is also accessed and printed.
+</p>
+
+<h2>Importing Specific Functions or Variables from a Module</h2>
+<p>Instead of importing the entire module, you can import specific functions or variables using the from keyword.
+</p>
+<pre><code class="language-py">
+from math import sqrt, pi
+
+print(sqrt(25))  # Output: 5.0
+print(pi)  # Output: 3.141592653589793
+</code></pre>
+
+
+<h2>Importing a Module with an Alias</h2>
+<p>You can import a module with an alias (alternate name) using the <strong>as</strong> keyword. This can be useful to provide a shorter or more descriptive name for the module.
+</p>
+<pre><code class="language-py">
+import math as m
+
+print(m.sqrt(25))  # Output: 5.0
+</code></pre>
+
+
+<h2>Creating a Custom Module</h2>
+<p>To create a module, you need to create a new Python file with a .py extension. This file will serve as your module and can contain any valid Python code.
+</p>
+<pre><code class="language-py">
+# my_module.py file
+def greet(name):
+     print(f"Hello, {name}!")
+
+def square(n):
+     return n * n
+
+PI = 3.141592653589793
+</code></pre>
+<p>In this example, the my_module.py file defines two functions (greet() and square()) and a variable (PI).
+</p>
+
+
+<h2>Importing Your Module</h2>
+<p>Once you've created your module, you can import it into other Python programs (like we discussed earlier) using the import statement.
+</p>
+<pre><code class="language-py">
+import my_module
+
+my_module.greet("Radha")  # Output: Hello, Radha!
+print(my_module.square(5))  # Output: 25
+print(my_module.PI)  # Output: 3.141592653589793
+</code></pre>
+
+
+</article>
+
+<div class="prev-next">
+     <a href="./python-exception-handling.html" class="next">Previous</a>
+     <a href="./python-packages.html" class="next">Next</a>
+</div>
+
+</section>
+
+</main>
+
+<footer>
+     <h3><a href="../../index.html" class="logo">LangGuides</a></h3>
+     <p>Copyright &#169;	 2023 langguides. All rights reserved</p>
+     <a href="../../about/privacy.html">Privacy Policy</a>
+     <a href="../../about/terms-of-use.html">Terms of Use</a>
+</footer>
+
+<script src="../../source/index.js"></script>
+<script src="../../source/prism.js"></script>
+</body>
+</html>

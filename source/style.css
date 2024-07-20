@@ -1,0 +1,275 @@
+ 
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Source+Sans+Pro&display=swap');
+ 
+  *{
+     margin: 0%;
+     padding: 0%;
+     box-sizing: border-box;
+     --para-size:15px;
+     --h1-size:20px;
+     --h2-size:18px;
+     --h3-size:17px;
+     line-height: 30px;
+     letter-spacing: 1px;
+     word-spacing: 2px;
+     font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+header{
+     padding: 30px 9%;
+     position: fixed;
+     top: 0;
+     width: 100%;
+     z-index: 3;
+     background-color: black;
+     
+}
+
+.logo{
+     text-decoration: none;
+     font-size: 21px;
+     color:white;
+     border-bottom: 3px solid white transparent;
+}
+
+nav{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+      }
+
+.nav-links{
+     display: flex;
+     justify-content: space-between;
+     gap:35px;
+}
+
+.nav-links li{
+     list-style: none;
+}
+
+.nav-links a{
+     text-decoration: none;
+     color:white;
+     border-bottom: 3px solid rgb(255, 255, 255) transparent 0.5s ease;
+}
+
+.nav-links a:hover{
+     border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+main{
+    margin-top: 90px;
+}
+
+.row{
+     padding: 30px 9%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.contents{
+     display: flex;
+     flex-direction: column;
+     gap:30px;
+}
+
+.course{
+     text-decoration: none;
+     width: 30vw;
+     border: 1px solid  rgb(55, 102, 172);
+     padding: 9px;
+     border-radius: 18px;
+     text-align: center;
+     font-size: 15px;
+     background-color: rgb(55, 102, 172);
+     color:white;
+ 
+}
+
+.courses{
+     width: 80%;
+     margin: auto;
+     margin-top: 30px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 9px;
+     gap:21px;
+}
+#open,#close{
+     display: none;
+}
+
+footer{
+     display: flex;
+     flex-direction: column;
+     justify-content:center;
+     align-items: center;
+     padding: 30px;
+     gap:20px;
+     color: white;
+     background-color: rgb(0, 0, 0);
+}
+footer a{
+     color:white;
+}
+
+.content{
+     display: flex;
+     flex-direction: column;
+     width: 80%;
+     padding: 5px;
+     margin: auto;
+     gap:30px;
+     
+}
+
+h1{
+     font-size: var(--h1-size);
+}
+
+h2{
+     font-size: var(--h2-size);
+     color: rgb(211, 100, 25);
+}
+h3{
+     font-size: var(--h3-size);
+     color: rgb(211, 100, 25);
+}
+article{
+     display: flex;
+     flex-direction: column;
+     padding: 5px;
+     gap:10px;
+}
+.content ol, .content ul{
+     margin-left: 30px;
+}
+
+.content ol li, .content ul li{
+     line-height: 30px;
+     font-weight: bold;
+     color:rgb(25, 72, 201);
+    margin-bottom: 5px;
+      
+}
+#up{
+     position: fixed;
+     z-index: 1;
+     top:85vh;
+     left:90%;
+     background: rgb(22, 97, 236);;
+     padding: 9px;
+     border: 1px solid rgb(255, 255, 255);
+     border-radius: 50%;
+     width: 50px;
+     height: 50px;
+     text-align: center;
+     box-shadow: 0 0 50px rgb(255, 245, 245);
+     cursor: pointer;
+     color:rgb(33, 32, 34);
+     color:white;
+     font-size: 25px;
+}
+.content a{
+     text-decoration: none;
+     font-size: 14px;
+}
+.prev-next{
+     display: flex;
+     width: 100%;
+     justify-content: space-between;
+     padding: 20px;
+}
+.prev, .next{
+     background-color: rgb(22, 96, 182);
+     color:white;
+     padding: 9px;
+     border-radius: 18px;
+}
+@media (max-width: 1000px) {
+     #up{
+         left:80%;
+     }
+i{
+     color:white;
+}
+main{
+     width: 100%;
+     margin-top:50px;
+     padding: 3px;
+}
+header{
+     padding: 0;
+}
+ 
+nav{
+     flex-direction: column;
+     margin-top: 10px;
+     padding-bottom: 10px;
+}
+.nav-links {
+     flex-direction: column;
+     align-items: center;
+     gap: 20px;
+     margin-top: 15px;
+     background-color: rgb(0, 0, 0);
+     width: 100%;
+     padding: 10px;
+     display: none;
+}
+ .menu{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     gap:30px;
+ }
+
+.row{
+     flex-direction: column;
+     gap:30px;
+     align-items: center;
+}
+.course{
+     width: 100%;
+}
+.courses{
+     width: 100%;
+}
+footer p{
+     font-size: 13px;
+}
+.content{
+     width: 100%;
+     gap:28px;
+}
+.content a{
+     text-decoration: none;
+}
+ 
+li{
+     font-size: 13px;
+     line-height: 28px;
+}
+#open{
+     display: block;
+     font-size: 25px;
+     cursor: pointer;
+}
+#close{
+     display: none;
+     font-size: 25px;
+     cursor: pointer;
+}
+h2,h3{
+     font-size: 15px;
+}
+p{
+     font-size: 13px;
+}
+}
+
